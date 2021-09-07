@@ -1,62 +1,76 @@
-body{
+body {
     margin: 0px;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px;
 }
-.header img{
+
+.header img {
     height: 24px;
 }
-.logo{
+
+.logo {
     display: flex;
 }
-.headerList span{
+
+.headerList span {
     padding-left: 20px;
 }
-.headerList :first-child{
+
+.headerList :first-child {
     color: #ef7338;
     border-bottom: 1px solid #ef7338;
     border-bottom-width: 2px;
     padding-bottom: 5px;
 }
-.containers{
+
+.containers {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 500px;
     background-color: #f5efea;
 }
-.login_form{
+
+.login_form {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    width: 23%;
+    height: 90%;
 }
-.row{
+
+.row {
     margin-top: 40px;
 }
-.col{
+
+.col {
     text-align: center;
 }
-.row h2{
+
+.row h2 {
     color: #ef7338;
 }
-.col-8 h4{
+
+.col-8 h4 {
     color: #ef7338;
 }
-.col-4 img{
+
+.col-4 img {
     border-radius: 100px;
     height: 100px;
-
 }
+
 .card {
-  border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
-  width: 400px;
-  height: 400px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
 }
 
 .card__header,
@@ -65,37 +79,44 @@ body{
 }
 
 .card--primary .card__header {
-  background: var(--color-primary);
+    background: var(--color-primary);
 }
+
 .card--secondary .card__header {
-  background: var(--color-secondary);
+    background: var(--color-secondary);
 }
 
 .card--primary .badge--primary {
-  background: #126de4;
+    background: #126de4;
 }
 
 .card--secondary .badge--secondary {
-  background: #02cdf1;
+    background: #02cdf1;
 }
-.card--color{
+
+.card--color {
     border: 1px solid #ffc107;
     background-color: #faf5e8;
 }
-.card__tag{
+
+.card__tag {
     text-align: center;
     padding: 10px;
 }
-.card__blueTag{
-    background-color:#e2e3f3;
+
+.card__blueTag {
+    background-color: #e2e3f3;
 }
-.card__yellowTag{
-    background-color:  #f5e9c7;
+
+.card__yellowTag {
+    background-color: #f5e9c7;
 }
-.card__orangeTag{
+
+.card__orangeTag {
     background-color: #fdeae2;
 }
-.space{
+
+.space {
     padding-right: 10px;
 }
 
@@ -105,119 +126,198 @@ body{
        PLANS
 
 */
+
 .plan {
-  transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
 }
 
 .plan__name {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  padding-top: 10px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .plan__price {
     font-size: 30px;
-    
 }
-.plan__blueColor{
+
+.plan__blueColor {
     color: #488dff;
 }
-.plan__yellowColor{
+
+.plan__yellowColor {
     color: #ffc107;
 }
-.plan__orangeColor{
+
+.plan__orangeColor {
     color: #ef7338;
 }
 
-
 .plan__billing-cycle {
-  font-size: 1rem;
-  font-weight: 300;
-  opacity: 0.8;
-  margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
 }
 
 .plan__description {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
 }
 
 .plan .list__item {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
+
 .plan--popular .card__header {
-  position: relative;
+    position: relative;
 }
 
 .plan--popular .card__header::before {
-  content: url(../images/popular.svg);
-  width: 40px;
-  display: inline-block;
-  position: absolute;
-  top: -1px;
-  right: 5%;
+    content: url(../images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    right: 5%;
 }
+
 .plan:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 .plan--popular:hover {
-  transform: scale(1.15);
+    transform: scale(1.15);
 }
+
 .list {
-  list-style: none;
-  padding-left: 0;
-  /* color: var(--color-headings); */
+    list-style: none;
+    padding-left: 0;
+    /* color: var(--color-headings); */
 }
+
 .list--inline .list__item {
-  display: inline-block;
+    display: inline-block;
 }
+
 .list--tick {
-  list-style-image: url(images/tick.svg);
-  padding-left: 20px;
-  font-size: 13px;
+    list-style-image: url(images/tick.svg);
+    padding-left: 20px;
+    font-size: 13px;
 }
-.list--tick li{
+
+.list--tick li {
     padding-bottom: 10px;
 }
+
 .list--tick .list__item {
-  padding-left: 0.5rem;
-  margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
 }
+
 .block-plans .grid {
-  gap: 8rem 4rem;
+    gap: 8rem 4rem;
 }
 
 .block-plans .card {
-  max-width: 500px;
-  margin: 0 auto;
+    max-width: 500px;
+    margin: 0 auto;
 }
-.block-plans{
+
+.block-plans {
     margin-top: 100px;
 }
+
 .grid {
-  display: grid;
+    display: grid;
 }
 
- .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.grid--1x3 {
+    grid-template-columns: repeat(4, 1fr);
+}
 
-  .footer{
-      margin-top: 5rem;
-      margin-left: 5rem;
-      margin-right: 5rem;
-  }
-  .footer h4{
-      font-size: 18px;
-      color: #ef7338;
-  }
-  .footer li{
-      list-style-type: none;
-      padding: 0;
-  }
-  .footer span{
-      padding: 10px;
-  }
+.footer {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: #ef7338;
+}
+
+.footer li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer span {
+    padding: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+.formHeader {
+    padding-bottom: 20px;
+}
+
+.footer__center {
+    padding-left: 40px;
+}
+
+.footer__center li {
+    padding-bottom: 10px;
+}
+
+.footer__center li:nth-child(2) {
+    color: #ef7338;
+}
+
+.footer__right .loginForm__group {
+    padding: 15px
+}
+
+.login__btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact div:first-child {
+    width: 170px;
+    background-color: #e7f4f2;
+    padding: 10px;
+    color: #128c7e;
+    margin-right: 20px;
+}
+
+.contact div:nth-child(2) {
+    width: 170px;
+    background-color: #eaf1ff;
+    padding: 10px;
+    color: #488dff;
+}
+
+.contact>div>i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer__right ul {
+    display: flex;
+}
+
+.footer__right li {
+    width: 40px;
+    height: 40px;
+}
