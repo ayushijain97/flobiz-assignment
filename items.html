@@ -16,8 +16,8 @@
 
 <body>
     <nav class="navbar navbar-light justify-content-between navbar-container">
-        <a class="navbar-brand"><strong>9649556279</strong></a>
-        <a><strong>Logout</strong></a>
+        <p class="navbar-brand" id="loggedInUser"><strong>9649556279</strong></p>
+        <a id="logout-button"><strong>Logout</strong></a>
     </nav>
     <div class="row table_heading navbar-container">
         <div class=" col-8 col-md-offset-2 ">
@@ -29,15 +29,15 @@
     </div>
     <div class="row table-container">
         <div class="col-8 table__divider padding-top">
-            <table id="table" class="items-list">
+            <table id="table" data-search="true" class="items-list">
                 <thead>
                     <tr>
-                        <th data-field="id ">ITEM NAME</th>
-                        <th data-field="name ">ITEM CODE</th>
-                        <th data-field="selling price ">SELLING PRICE</th>
-                        <th data-field="purchasing price">PURCHASE PRICE</th>
-                        <th data-field="unit ">UNIT</th>
-                        <th data-field="date">DATE</th>
+                        <th data-field="name" data-searchable="true">ITEM NAME</th>
+                        <th data-field="code" data-searchable="true">ITEM CODE</th>
+                        <th data-field="salesPrice" data-searchable="false">SELLING PRICE</th>
+                        <th data-field="purchasePrice" data-searchable="false">PURCHASE PRICE</th>
+                        <th data-field="unit" data-searchable="false">UNIT</th>
+                        <th data-field="date" data-searchable="false">DATE</th>
                     </tr>
                 </thead>
             </table>
@@ -48,8 +48,8 @@
                 <div class="col-md-6 textColor ">Item-Code</div>
             </div>
             <div class="row ">
-                <input class="col-md-5 item-name " placeholder="Enter item name " />
-                <input class="col-md-5 item-code " placeholder="Enter item name " />
+                <input class="col-md-5 item-name " id="item-name" placeholder="Enter Item name " />
+                <input class="col-md-5 item-code " id="item-code" placeholder="Enter Item code " />
             </div>
             <div class="row pricing-Details ">
                 <p>Stock & Pricing Details (Optional)</p>
@@ -59,23 +59,25 @@
                 <div class="col-md-6 textColor ">Purchase Price</div>
             </div>
             <div class="row ">
-                <input class="col-md-5 item-name " type="number" placeholder="₹0" />
-                <input class="col-md-5 item-code " type="number" placeholder="₹0" />
+                <input class="col-md-5 item-name " type="number" id="item-sales-price" placeholder="₹0" />
+                <input class="col-md-5 item-code " type="number" id="item-purchase-price" placeholder="₹0" />
             </div>
             <div class="row margin_top ">
                 <div class="col-md-6 textColor ">Measuring UNIT</div>
                 <div class="col-md-6 textColor ">Opening Stock Date</div>
             </div>
             <div class="row ">
-                <select class="col-md-5 item-name" placeholder="select Unit">
+                <select class="col-md-5 item-name" id="item-unit">
+                    <option value="">Select unit</option>
                     <option value="pcs">pcs</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
+                    <option value="boxes">boxes</option>
+                    <option value="gms">gms</option>
+                    <option value="kgs">kgs</option>
+                    <option value="ltr">ltr</option>
                 </select>
-                <input class="col-md-5 item-code " type="date" placeholder="Select Date" />
+                <input class="col-md-5 item-code " type="date" placeholder="Select Date" id="item-date" />
             </div>
-            <button class="btn btn-primary button ">Save</button>
+            <button class="btn btn-primary button " id="item-save-button">Save</button>
 
         </div>
 
