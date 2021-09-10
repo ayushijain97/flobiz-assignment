@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,14 +36,33 @@
             <div class="form-group loginForm__group">
                 <h4 class="formHeader">Login to myBillBook</h4>
                 <label for="mobileNumber"> Enter Mobile Number</label>
-                <input type="number" class="form-control" id="mobileNumber" aria-describedby="emailHelp" placeholder="Mobile Number">
+                <input type="number" class="form-control" id="mobile_Number" aria-describedby="emailHelp" placeholder="Mobile Number">
             </div>
-            <div class="form-group loginForm__group">
+            <div class="toast" id="myToast">
+                <div class="toast-body">
+                    please enter valid mobile number!!!
+                </div>
+            </div>
+            <div class="form-group loginForm__group" id="inputOTP" style="display: none;">
                 <label for="otpInput">Enter OTP</label>
                 <input type="number" class="form-control" id="otpInput" placeholder="One Time Password">
                 <small id="mobileHelp" class="form-text text-muted">Resend OTP in <strong>00:59</strong> seconds</small>
             </div>
-            <button type="submit" class="btn btn-primary login__btn">Login</button>
+            <div class="toast" id="myToast">
+                <div class="toast-body">
+                    please enter valid mobile number!!!
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary login__btn" id="login__btn" style="display: none;">Login</button>
+            <button type="button" class="btn btn-primary login__btn" id="continueBtn">Continue</button>
+
+
+
+            <div class="toast" id="Toast">
+                <div class="toast-body">
+                    please enter valid OTP!!!
+                </div>
+            </div>
         </form>
     </div>
 
@@ -186,6 +206,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
