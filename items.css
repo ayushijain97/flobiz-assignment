@@ -1,75 +1,79 @@
-                 :root {
-                    -text--padding: 20px;
-                }
-                
-                body {
-                    font-family: Inter, Arial, Helvetica, sans-serif;
-                }
-                
-                .textColor {
-                    color: #687e96;
-                }
-                
-                p {
-                    margin-bottom: 0;
-                }
-                
-                input {
-                    border: 1px solid rgb(230, 226, 226);
-                }
-                
-                .margin_top {
-                    margin-top: 20px;
-                }
-                
-                .padding-top {
-                    padding: 20px;
-                }
-                
-                .navbar-container {
-                    padding: 15px;
-                }
-                
-                .item-name {
-                    margin-left: 10px;
-                    padding: 5px 5px 5px 10px;
-                    border-radius: 3px;
-                }
-                
-                .item-code {
-                    margin-left: 50px;
-                    padding: 5px 5px 5px 10px;
-                    border-radius: 3px;
-                }
-                
-                .pricing-Details {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                    background-color: rgb(245, 241, 241);
-                    padding: 10px;
-                }
-                
-                .table-container {
-                    height: 100vh;
-                    border-top: 1px solid rgb(221, 217, 217);
-                }
-                
-                .table__divider {
-                    border-right: 1px solid rgb(221, 217, 217);
-                }
-                
-                .button {
-                    width: 98%;
-                    margin-top: 50px;
-                    margin-right: 20px;
-                    background-color: #4c3cce;
-                    ;
-                }
-                
-                .table_heading {
-                    border-top: 1px solid rgb(221, 217, 217);
-                }
-                
-                #logout-button {
-                    cursor: pointer;
-                }
+                    :root {
+                       -text--padding: 20px;
+                   }
+                   
+                   body {
+                       font-family: Inter, Arial, Helvetica, sans-serif;
+                   }
+                   
+                   .textColor {
+                       color: #687e96;
+                   }
+                   
+                   p {
+                       margin-bottom: 0;
+                   }
+                   
+                   input {
+                       border: 1px solid rgb(230, 226, 226);
+                   }
+                   
+                   .margin_top {
+                       margin-top: 20px;
+                   }
+                   
+                   .padding-top {
+                       padding: 20px;
+                   }
+                   
+                   .navbar-container {
+                       padding: 15px;
+                   }
+                   
+                   .item-name {
+                       margin-left: 10px;
+                       padding: 5px 5px 5px 10px;
+                       border-radius: 3px;
+                   }
+                   
+                   .item-code {
+                       margin-left: 50px;
+                       padding: 5px 5px 5px 10px;
+                       border-radius: 3px;
+                   }
+                   
+                   .pricing-Details {
+                       margin-top: 20px;
+                       margin-bottom: 30px;
+                       background-color: rgb(245, 241, 241);
+                       padding: 10px;
+                   }
+                   
+                   .table-container {
+                       height: 100vh;
+                       border-top: 1px solid rgb(221, 217, 217);
+                   }
+                   
+                   .table__divider {
+                       border-right: 1px solid rgb(221, 217, 217);
+                   }
+                   
+                   .button {
+                       width: 98%;
+                       margin-top: 40px;
+                       margin-right: 20px;
+                       background-color: #4c3cce;
+                       ;
+                   }
+                   
+                   .table_heading {
+                       border-top: 1px solid rgb(221, 217, 217);
+                   }
+                   
+                   #logout-button {
+                       cursor: pointer;
+                   }
+                   
+                   .search-input {
+                       width: 300px;
+                   }

@@ -36,14 +36,33 @@
             <div class="form-group loginForm__group">
                 <h4 class="formHeader">Login to myBillBook</h4>
                 <label for="mobileNumber"> Enter Mobile Number</label>
-                <input type="number" class="form-control" id="mobileNumber" aria-describedby="emailHelp" placeholder="Mobile Number">
+                <input type="number" class="form-control" id="mobile_Number" aria-describedby="emailHelp" placeholder="Mobile Number">
             </div>
-            <div class="form-group loginForm__group">
+            <div class="toast" id="myToast">
+                <div class="toast-body">
+                    please enter valid mobile number!!!
+                </div>
+            </div>
+            <div class="form-group loginForm__group" id="inputOTP" style="display: none;">
                 <label for="otpInput">Enter OTP</label>
                 <input type="number" class="form-control" id="otpInput" placeholder="One Time Password">
                 <small id="mobileHelp" class="form-text text-muted">Resend OTP in <strong>00:59</strong> seconds</small>
             </div>
-            <button type="button" class="btn btn-primary login__btn" id="login__btn">Login</button>
+            <div class="toast" id="myToast">
+                <div class="toast-body">
+                    please enter valid mobile number!!!
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary login__btn" id="login__btn" style="display: none;">Login</button>
+            <button type="button" class="btn btn-primary login__btn" id="continueBtn">Continue</button>
+
+
+
+            <div class="toast" id="Toast">
+                <div class="toast-body">
+                    please enter valid OTP!!!
+                </div>
+            </div>
         </form>
     </div>
 

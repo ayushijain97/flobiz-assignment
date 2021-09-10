@@ -28,11 +28,12 @@
         </div>
     </div>
     <div class="row table-container">
-        <div class="col-8 table__divider padding-top">
+
+        <div class="col-md-8 table__divider padding-top">
             <table id="table" data-search="true" class="items-list">
                 <thead>
                     <tr>
-                        <th data-field="name" data-searchable="true">ITEM NAME</th>
+                        <th data-field="name" data-searchable="true" data-sortable="true">ITEM NAME</th>
                         <th data-field="code" data-searchable="true">ITEM CODE</th>
                         <th data-field="salesPrice" data-searchable="false">SELLING PRICE</th>
                         <th data-field="purchasePrice" data-searchable="false">PURCHASE PRICE</th>
@@ -40,20 +41,89 @@
                         <th data-field="date" data-searchable="false">DATE</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr class="no-records-found">
+                        <td colspan="6">No matching records found</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
-        <div class="col-4 padding-top">
-            <div class="row ">
+        <div class="col-md-4 padding-top">
+            <form class="needs-validation" id="items-form" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01" class="textColor">Item-Name</label>
+                        <input type="text" class="form-control" id="item-name" placeholder="Enter Item name" required>
+                        <div class="invalid-feedback">
+                            Please enter an Item Name.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02" class="textColor">Item-Code</label>
+                        <input type="text" class="form-control" id="item-code" placeholder="Enter Item code " required>
+                        <div class="invalid-feedback">
+                            Please enter an Item Code.
+                        </div>
+                    </div>
+                </div>
+                <div class="row pricing-Details ">
+                    <p>Stock & Pricing Details (Optional)</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustomUsername" class="textColor">Sales Price</label>
+                        <input type="text" class="form-control" id="item-sales-price" placeholder="₹0" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please enter sales Price.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom03" class="textColor">Purchase Price</label>
+                        <input type="text" class="form-control" id="item-purchase-price" placeholder="₹0" required>
+                        <div class="invalid-feedback">
+                            Please enter purchase Price.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom05" class="textColor">Measuring unit</label>
+                        <select class="form-control" id="item-unit" required>
+                                <option value="">Select unit</option>
+                                <option value="pcs">pcs</option>
+                                <option value="boxes">boxes</option>
+                                <option value="gms">gms</option>
+                                <option value="kgs">kgs</option>
+                                <option value="ltr">ltr</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please enter measuring unit.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02" class="textColor">Opening Stock Date</label>
+                        <input type="date" class="form-control" id="item-date" placeholder="Enter Item code " required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-primary" type="submit">Submit form</button> -->
+                <button class="btn btn-primary button " type="submit" id="item-save-button">Save</button>
+            </form>
+
+
+
+            <input type="hidden" id="item-id" />
+            <!-- <div class="row ">
                 <div class="col-md-6 textColor ">Item-Name</div>
                 <div class="col-md-6 textColor ">Item-Code</div>
             </div>
             <div class="row ">
-                <input class="col-md-5 item-name " id="item-name" placeholder="Enter Item name " />
+                <input class="col-md-5 item-name " id="item-name" placeholder="Enter Item name " required />
                 <input class="col-md-5 item-code " id="item-code" placeholder="Enter Item code " />
             </div>
-            <div class="row pricing-Details ">
-                <p>Stock & Pricing Details (Optional)</p>
-            </div>
+
             <div class="row margin_top ">
                 <div class="col-md-6 textColor ">Sales Price</div>
                 <div class="col-md-6 textColor ">Purchase Price</div>
@@ -78,12 +148,18 @@
                 <input class="col-md-5 item-code " type="date" placeholder="Select Date" id="item-date" />
             </div>
             <button class="btn btn-primary button " id="item-save-button">Save</button>
+            <div class="toast" id="myToast">
+                <div class="toast-body">
+                    please enter valid mobile number!!!
+                </div>
+            </div>
+
+        </div> -->
 
         </div>
-
-    </div>
     </div>
     <script src="items.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>
