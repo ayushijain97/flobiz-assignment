@@ -380,11 +380,14 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 450px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .made-text {
     width: 70%;
     text-align: right;
+    margin-right: 18px;
 }
 
 .border-orange {
