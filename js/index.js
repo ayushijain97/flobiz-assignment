@@ -1,13 +1,22 @@
 $(() => {
+
     $("#continueBtn").click(function() {
         let mobileNumber = $("#mobile_Number").val();
         if (mobileNumber.length === 10) {
             changingStyles();
             gettingOTP(mobileNumber);
+            resendOTP();
             $("#login__btn").click(loggingIn);
         } else {
             enableToaster();
         }
+    })
+    $("#otp_btn").click(function() {
+        let mobileNumber = $("#mobile_Number").val();
+        gettingOTP(mobileNumber);
+        $("#otp_btn").css({ display: "none" });
+        $("#mobileHelp").css({ display: "flex" });
+        resendOTP();
     })
 });
 const gettingOTP = async(mobileNumber) => {
@@ -30,6 +39,19 @@ const gettingOTP = async(mobileNumber) => {
     } catch (err) {
         alert(err);
     }
+}
+const resendOTP = () => {
+    let timer = 58;
+    var otpInterval = setInterval(() => {
+        $("#resend_otp").html(timer);
+        timer--;
+        if (timer == 0) {
+            clearInterval(otpInterval);
+            $("#resend_otp").html(" " + "59");
+            $("#otp_btn").css({ display: "flex" });
+            $("#mobileHelp").css({ display: "none" });
+        }
+    }, 1000)
 }
 const changingStyles = () => {
     $("#continueBtn").css({ display: "none" });
