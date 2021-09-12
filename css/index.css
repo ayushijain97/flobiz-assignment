@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    padding: 40px 0;
 }
 
 
@@ -30,6 +30,7 @@
 .containers {
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-around;
     height: 500px;
     background-color: #f5efea;
@@ -241,8 +242,6 @@
 
 .footer {
     margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
 }
 
 .footer h4 {
@@ -327,7 +326,77 @@ ul {
     text-decoration: underline;
 }
 
+.statistics {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.column>h2 {
+    color: #ef7338;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.left-section>h3 {
+    font-size: 40px;
+}
+
+.left-section>h4 {
+    color: #ef7338;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.right-section {
+    width: 102px;
+}
+
+.right-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.benefit-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.made-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.made-text {
+    width: 70%;
+    text-align: right;
+}
+
+.border-orange {
+    width: 300px;
+    height: 3px;
+    background-color: #ef7338;
+}
+
 @media only screen and (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
     .block-plans {
         max-width: 1200px;
     }
