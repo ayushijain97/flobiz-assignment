@@ -11,6 +11,8 @@
 
  $(function() {
      console.log("ready!");
+
+
      // 1. Checking if user is loggedIn
      const loggedInUser = getLoggedInUser();
      const number = loggedInUser.mobile_number;
@@ -32,9 +34,10 @@
              console.log(arg1);
              editItemsRow(arg1);
          }
+
      });
 
-
+     $(".search").prepend(`<span> <i class="fas fa-search iconSize"></i></span>`);
      // Fetch all the forms we want to apply custom Bootstrap validation styles to
      var forms = document.getElementsByClassName('needs-validation');
      // Loop over them and prevent submission

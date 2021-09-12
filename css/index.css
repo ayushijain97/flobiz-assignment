@@ -5,6 +5,9 @@
     margin: 30px;
 }
 
+
+/* Source Sans Pro!important */
+
 .header img {
     height: 24px;
 }
@@ -92,7 +95,7 @@
 
 .card--color {
     border: 1px solid #ffc107;
-    background-color: #faf5e8;
+    background-color: #fdf6ed;
 }
 
 .card__tag {
@@ -140,15 +143,15 @@
 }
 
 .plan__blueColor {
-    color: #488dff;
+    color: #596ebe;
 }
 
 .plan__yellowColor {
-    color: #ffc107;
+    color: #e5a032;
 }
 
 .plan__orangeColor {
-    color: #ef7338;
+    color: #ea5a01;
 }
 
 .plan__billing-cycle {
@@ -316,4 +319,10 @@ ul {
 .footer__right li {
     width: 40px;
     height: 40px;
+}
+
+#otp_btn {
+    cursor: pointer;
+    color: #126de4;
+    text-decoration: underline;
 }
