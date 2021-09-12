@@ -326,3 +326,16 @@ ul {
     color: #126de4;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 1200px) {
+    .block-plans {
+        max-width: 1200px;
+    }
+    .block-plans .card {
+        max-width: 300px;
+        margin: 10px;
+    }
+    .block-plans .grid {
+        gap: 9rem 3rem;
+    }
+}
